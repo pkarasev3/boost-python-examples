@@ -8,7 +8,7 @@ void hello_world()
   std::cout << "hi!\n";
 }
 
-BOOST_PYTHON_MODULE(mod1)
+BOOST_PYTHON_MODULE(wrongname)
 {
   def("hello_world", &hello_world);
 }

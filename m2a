@@ -1,0 +1,4 @@
+import m2a
+
+m2a.hello_world(1)
+m2a.hello_world(2)

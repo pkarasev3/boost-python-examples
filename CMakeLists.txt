@@ -29,7 +29,19 @@ endmacro()
   
 
 foreach(lib 
-    mod1
-    mod2)
-  pybindings(${lib} ${lib}.cpp)
+    m1a.helloworld
+    m1b.modnameerror
+    m2a.helloint
+    m2b.udt
+    m2c.udtpass
+    )
+
+  string(REGEX REPLACE "\\..*$" ""
+    base
+    ${lib})
+  message(STATUS ".. ${base}")
+    
+
+  pybindings(${base} ${lib}.cpp)
+
 endforeach()

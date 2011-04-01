@@ -1,0 +1,8 @@
+import m2c
+
+s = m2c.MyClass()
+
+s.hello_world(1)
+s.hello_world(2)
+
+m2c.use_myclass(s, 2)

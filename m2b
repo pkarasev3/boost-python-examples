@@ -1,0 +1,6 @@
+import m2b
+
+s = m2b.MyClass()
+
+s.hello_world(1)
+s.hello_world(2)

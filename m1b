@@ -1,0 +1,5 @@
+import m1b
+
+print m1b
+print m1b.hello_world
+m1b.hello_world()
