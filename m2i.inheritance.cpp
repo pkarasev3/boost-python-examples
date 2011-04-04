@@ -25,3 +25,4 @@ BOOST_PYTHON_MODULE(m2i)
   def("takes_base", &takes_base);
   def("takes_derived", &takes_derived);
 }
+

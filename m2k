@@ -1,0 +1,24 @@
+from m2k import *
+b = Base()
+b
+takes_base(b)
+takes_derived(b)
+d = Derived()
+takes_base(d)
+takes_derived(d)
+
+def callfoo(obj):
+    obj.foo()
+
+callfoo(b)
+callfoo(d)
+	
+class MyDerived(Base):
+    def foo(self):
+        print "MyDerived.Base() called!"
+
+m = MyDerived()
+callfoo(m)
+takes_base(m)
+takes_derived(m)
+
