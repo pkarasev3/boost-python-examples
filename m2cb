@@ -1,0 +1,6 @@
+from m2cb import *
+
+s = MyClass()
+
+use_myclass(s, 2)
+make_unwrapped()

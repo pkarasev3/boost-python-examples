@@ -1,0 +1,5 @@
+from m2l import *
+stringy_object = "stringy"
+takes_obj(stringy_object)
+inty_object = 13
+takes_obj(inty_object)

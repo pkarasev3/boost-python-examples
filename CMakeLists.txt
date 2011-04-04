@@ -34,6 +34,7 @@ foreach(lib
     m2a.helloint
     m2b.udt
     m2c.udtpass
+    m2cb.udt
     m2d.datamember
     m2e.readonly
     m2f.constructor
@@ -43,6 +44,8 @@ foreach(lib
     m2j.virtual1
     m2k.virtual2
     m2ka.masquerade
+    m2l.pyobj
+    m2m.pyobj_udt
     )
 
   string(REGEX REPLACE "\\..*$" ""
