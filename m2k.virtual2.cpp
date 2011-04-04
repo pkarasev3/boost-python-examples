@@ -34,6 +34,7 @@ BOOST_PYTHON_MODULE(m2k)
   class_<Derived, bases<Base> >("Derived")
     .def("foo", &Derived::foo)
     ;
+
   def("takes_base", &takes_base);
   def("takes_derived", &takes_derived);
 }

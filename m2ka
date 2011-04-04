@@ -1,0 +1,4 @@
+from m2ka import *
+s = MyClass()
+s.hello_world(2)
+s.hello_times2(2)

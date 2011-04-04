@@ -42,6 +42,7 @@ foreach(lib
     m2i.inheritance
     m2j.virtual1
     m2k.virtual2
+    m2ka.masquerade
     )
 
   string(REGEX REPLACE "\\..*$" ""
