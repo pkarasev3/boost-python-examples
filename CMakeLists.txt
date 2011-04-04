@@ -38,6 +38,7 @@ foreach(lib
     m2e.readonly
     m2f.constructor
     m2g.constructors
+    m2h.properties
     )
 
   string(REGEX REPLACE "\\..*$" ""
