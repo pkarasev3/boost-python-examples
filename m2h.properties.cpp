@@ -25,7 +25,7 @@ BOOST_PYTHON_MODULE(m2h)
 {
   class_<MyClass>("MyClass")
     .def(init<int>())
-    .add_property("value", &MyClass::get_value, &MyClass::set_value)
+    .add_property("value",   &MyClass::get_value, &MyClass::set_value)
     .add_property("rovalue", &MyClass::get_value)
     ;
 }

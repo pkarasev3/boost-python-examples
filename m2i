@@ -1,0 +1,8 @@
+from m2i import *
+b = Base()
+takes_base(b)
+takes_derived(b)
+d = Derived()
+takes_base(d)
+takes_derived(d)
+

@@ -39,6 +39,7 @@ foreach(lib
     m2f.constructor
     m2g.constructors
     m2h.properties
+    m2i.inheritance
     )
 
   string(REGEX REPLACE "\\..*$" ""
