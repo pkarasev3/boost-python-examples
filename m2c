@@ -1,8 +1,8 @@
-import m2c
+from m2c import *
 
-s = m2c.MyClass()
+s = MyClass()
 
 s.hello_world(1)
 s.hello_world(2)
 
-m2c.use_myclass(s, 2)
+use_myclass(s, 2)

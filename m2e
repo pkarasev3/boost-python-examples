@@ -1,0 +1,8 @@
+from  m2e import *
+
+s = MyClass()
+s.value
+s.value = 5
+s.value
+s.set_value(5)
+s.value

@@ -1,0 +1,6 @@
+from m2g import *
+s = MyClass()
+s.value
+s2 = MyClass(13)
+s2.value
+

@@ -15,16 +15,17 @@ struct MyClass
   }
 };
 
-void use_myclass(MyClass m, int j)
+void use_myclass(MyClass m)
 {
-  m.hello_world(j+2);
+  m.hello_world(m.value);
 }
 
 
-BOOST_PYTHON_MODULE(m2c)
+BOOST_PYTHON_MODULE(m2d)
 {
   class_<MyClass>("MyClass")
     .def("hello_world", &MyClass::hello_world)
+    .def_readwrite("value", &MyClass::value)
     ;
 
   def("use_myclass", &use_myclass)

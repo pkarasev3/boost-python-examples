@@ -34,6 +34,10 @@ foreach(lib
     m2a.helloint
     m2b.udt
     m2c.udtpass
+    m2d.datamember
+    m2e.readonly
+    m2f.constructor
+    m2g.constructors
     )
 
   string(REGEX REPLACE "\\..*$" ""

@@ -1,0 +1,7 @@
+from m2d import *
+
+s = MyClass()
+s.value
+s.value = 5
+s.value
+use_myclass(s)

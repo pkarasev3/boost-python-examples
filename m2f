@@ -1,0 +1,4 @@
+from m2f import *
+s2 = MyClass(13)
+s2.value
+s = MyClass()

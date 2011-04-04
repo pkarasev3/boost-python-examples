@@ -1,6 +1,6 @@
-import m2b
+from m2b import *
 
-s = m2b.MyClass()
+s = MyClass()
 
 s.hello_world(1)
 s.hello_world(2)

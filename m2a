@@ -1,4 +1,4 @@
-import m2a
+from m2a import *
 
-m2a.hello_world(1)
-m2a.hello_world(2)
+hello_world(1)
+hello_world(2)
