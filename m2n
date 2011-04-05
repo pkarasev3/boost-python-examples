@@ -1,0 +1,24 @@
+from sys import getrefcount
+from m2n import *
+
+class S: pass
+
+s = S()
+getrefcount(s)
+
+t = T()
+getrefcount(t)
+
+takes_trawptr(t)
+takes_tref(t)
+
+
+takes_tptr(t)
+u = t
+takes_tptr(u)
+(getrefcount(t), getrefcount(u))
+v = u
+takes_tptr(v)
+(getrefcount(t), getrefcount(u), getrefcount(v))
+
+t = make_t()

@@ -46,6 +46,8 @@ foreach(lib
     m2ka.masquerade
     m2l.pyobj
     m2m.pyobj_udt
+    m2n.holder
+    m2o.holder2
     )
 
   string(REGEX REPLACE "\\..*$" ""

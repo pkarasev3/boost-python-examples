@@ -1,0 +1,25 @@
+from sys import getrefcount
+from m2o import *
+
+t = T()
+t
+
+takes_trawptr(t)
+takes_tref(t)
+
+
+takes_tptr(t)
+u = t
+takes_tptr(u)
+v = u
+takes_tptr(v)
+
+t = make_t()
+takes_tptr(t)
+getrefcount(t)
+u = make_t()
+takes_tptr(u)
+getrefcount(u)
+v = make_t()
+takes_tptr(v)
+getrefcount(v)
