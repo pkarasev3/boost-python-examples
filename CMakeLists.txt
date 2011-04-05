@@ -44,6 +44,7 @@ foreach(lib
     m2j.virtual1
     m2k.virtual2
     m2ka.masquerade
+    m2kb.virtual_with_default
     m2l.pyobj
     m2m.pyobj_udt
     m2n.holder

@@ -15,7 +15,7 @@ callfoo(d)
 	
 class MyDerived(Base):
     def foo(self):
-        print "MyDerived.Base() called!"
+        print "MyDerived.foo() called!"
 
 m = MyDerived()
 callfoo(m)
