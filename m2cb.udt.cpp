@@ -37,5 +37,4 @@ BOOST_PYTHON_MODULE(m2cb)
 
   def("use_myclass", &use_myclass);
   def("make_unwrapped", &make_unwrapped);
-
 }
