@@ -1,0 +1,14 @@
+from m3a import *
+pose = Pose()
+pose
+pose.pos.x
+pose.pos
+pose.pos.x = 13
+pose.pos.x
+pose.pos.y
+pose.pos.z
+pose.orient
+pose.orient.x
+pose.orient.w
+len(pose.orient)
+

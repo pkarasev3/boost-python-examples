@@ -1,0 +1,6 @@
+from m3b import *
+pose = Pose()
+pose
+len(pose.pos)
+len(pose.orient)
+

@@ -49,6 +49,8 @@ foreach(lib
     m2m.pyobj_udt
     m2n.holder
     m2o.holder2
+    m3a.pose
+    m3b.pose
     )
 
   string(REGEX REPLACE "\\..*$" ""
