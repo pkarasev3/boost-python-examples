@@ -1,15 +1,10 @@
-from m3b import *
-pose = Pose()
-pose
-len(pose.pos)
-len(pose.orient)
-
-d = {}
+from m3c import *
 
 pos = Position(3,4,5)
-pos  # suboptimal
+pos
 repr(pos)
-str(pos)
+pos.__repr__()
+str(pos)  # str just calls __repr__ since __str__ not defined
 
 pos2 = Position(3,4,5)
 

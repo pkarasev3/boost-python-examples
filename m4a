@@ -1,0 +1,6 @@
+from m4a import *
+vi = makevector(10)
+len(vi)
+vi.append(1313) ; vi.append(1313) ; vi.append(1313)
+[x for x in vi]
+[x for x in vi if x % 2 == 0]

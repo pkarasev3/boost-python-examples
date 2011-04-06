@@ -1,0 +1,12 @@
+from m2bb import *
+
+s = MyClass()
+
+s.static_cling()
+MyClass.static_cling()
+
+s.hello_world(2)
+MyClass.hello_world(2)
+m
+
+

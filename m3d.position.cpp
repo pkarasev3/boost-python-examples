@@ -1,4 +1,5 @@
 #include <boost/python.hpp>
+#include <boost/format.hpp>
 #include <iostream>
 using namespace boost::python;
 
@@ -10,13 +11,23 @@ struct Position
   Position(const Position& rhs) : x(rhs.x), y(rhs.y), z(rhs.z) { }
 };
 
-struct Orientation { float x, y, z, w; };
-
-struct Pose { Position pos; Orientation orient; };
-
 template <int I, typename T> int value(const T&) { return I; }
 
-BOOST_PYTHON_MODULE(m3b)
+namespace 
+{
+  int hash(const Position& p) 
+  {
+    return *reinterpret_cast<const int*>(&p.x) ^
+      *reinterpret_cast<const int*>(&p.y) ^
+      *reinterpret_cast<const int*>(&p.z); 
+  }
+  std::string repr(const Position& p) 
+  {
+    return boost::str(boost::format("Position(%f,%f,%f)") % p.x % p.y % p.z);
+  }
+}
+
+BOOST_PYTHON_MODULE(m3c)
 {
   class_<Position>("Position")
     .def(init<float, float, float>())
@@ -24,19 +35,8 @@ BOOST_PYTHON_MODULE(m3b)
     .def_readwrite("y", &Position::y)
     .def_readwrite("z", &Position::z)
     .def("__len__", &value<3, Position>)
-    ;
-
-  class_<Orientation>("Orientation")
-    .def_readwrite("x", &Orientation::x)
-    .def_readwrite("y", &Orientation::y)
-    .def_readwrite("z", &Orientation::z)
-    .def_readwrite("w", &Orientation::w)
-    .def("__len__", &value<4, Orientation>)
-    ;
-
-  class_<Pose>("Pose")
-    .def_readwrite("pos", &Pose::pos)
-    .def_readwrite("orient", &Pose::orient)
+    .def("__hash__", &hash)
+    .def("__repr__", &repr)
     ;
 }
 

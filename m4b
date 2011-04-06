@@ -1,0 +1,15 @@
+from m4b import *
+m = map_string_double()
+m
+m['one'] = 1.0
+m['zwei'] = 2.0
+m['tres'] = 3.0
+
+dumpmap(m)
+[x for x in m]
+[x[0] for x in m]
+[type(x) for x in m]
+[x.key() for x in m]
+[x.data() for x in m]
+
+

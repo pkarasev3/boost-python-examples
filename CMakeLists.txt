@@ -33,6 +33,8 @@ foreach(lib
     m1b.modnameerror
     m2a.helloint
     m2b.udt
+    m2bb.staticmethod
+    m2bc.enums
     m2c.udtpass
     m2cb.udt
     m2d.datamember
@@ -51,6 +53,10 @@ foreach(lib
     m2o.holder2
     m3a.pose
     m3b.pose
+    m3c.position
+    m3e.position
+    m4a.vector
+    m4b.map
     )
 
   string(REGEX REPLACE "\\..*$" ""

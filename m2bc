@@ -1,0 +1,13 @@
+from m2bc import *
+
+s = MyClass()
+
+Lang
+
+s.hello_world(English)
+s.hello_world(German)
+
+s.hello_world(Lang.English)
+s.hello_world(Lang.German)
+
+
