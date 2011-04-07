@@ -1,0 +1,6 @@
+from m2ha import *
+s = MyClass()
+s.twice("whee")
+s.twice(13)
+s.twice(24.6)
+

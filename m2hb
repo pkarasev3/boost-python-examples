@@ -1,0 +1,6 @@
+from m2hb import *
+s = MyClass()
+s.twice(False)
+s.twice(13)
+
+

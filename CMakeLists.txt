@@ -42,6 +42,8 @@ foreach(lib
     m2f.constructor
     m2g.constructors
     m2h.properties
+    m2ha.overloads
+    m2hb.overloadgotcha
     m2i.inheritance
     m2j.virtual1
     m2k.virtual2
