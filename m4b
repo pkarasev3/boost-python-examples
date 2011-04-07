@@ -6,10 +6,19 @@ m['zwei'] = 2.0
 m['tres'] = 3.0
 
 dumpmap(m)
+m.keys()
+m.values()
 [x for x in m]
 [x[0] for x in m]
+[x.second() for x in m]
 [type(x) for x in m]
 [x.key() for x in m]
 [x.data() for x in m]
 
+dict(m)
 
+foo = dict(bada_boom=13.4, bada_bing=14.0)
+foo
+mappyfoo = map_string_double(foo)
+mappyfoo
+mappyfoo.items()
