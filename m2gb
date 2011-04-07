@@ -1,0 +1,5 @@
+import m2gb
+m2gb.throws_logic_error()
+m2gb.grasp_spoon()
+
+

@@ -5,6 +5,8 @@ m['one'] = 1.0
 m['zwei'] = 2.0
 m['tres'] = 3.0
 
+'one' in m
+'m' in m
 dumpmap(m)
 m.keys()
 m.values()

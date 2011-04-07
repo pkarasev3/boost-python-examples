@@ -41,6 +41,8 @@ foreach(lib
     m2e.readonly
     m2f.constructor
     m2g.constructors
+    m2ga.cppthrow
+    m2gb.cppthrow_custom
     m2h.properties
     m2ha.overloads
     m2hb.overloadgotcha

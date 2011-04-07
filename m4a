@@ -1,11 +1,14 @@
 from m4a import *
 vi = makevector(10)
 len(vi)
+1313 in vi
 vi.append(1313) ; vi.append(1313) ; vi.append(1313)
+1313 in vi
 [x for x in vi]
 [x for x in vi if x % 2 == 0]
-
+sliced = vi[:-6]
+[x for x in sliced]
 v2 = vector_int([1,2,3,1,2,3,1,2,3])
-len(v2) 
+len(v2)
 v3 = [x*2 for x in v2[1:5]]
 v3
