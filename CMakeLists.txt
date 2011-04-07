@@ -55,6 +55,7 @@ foreach(lib
     m3b.pose
     m3c.position
     m3e.position
+    m3f.position.totuple
     m4a.vector
     m4b.map
     )

@@ -1,0 +1,7 @@
+from m3f import *
+
+pos = Position(3,4,5)
+pos
+
+pos.to_tuple()
+
