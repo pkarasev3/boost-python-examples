@@ -5,7 +5,8 @@
 
 using namespace boost::python;
 
-std::vector<int> makevector(unsigned len) {
+std::vector<int> makevector(unsigned len) 
+{
   std::vector<int> v(len);
   for (unsigned j=0; j<len; ++j)
     v[j] = random();

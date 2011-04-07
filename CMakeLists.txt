@@ -68,3 +68,18 @@ foreach(lib
   pybindings(${base} ${lib}.cpp)
 
 endforeach()
+
+foreach(prog 
+    m7a.pyconfigfile
+    m7b.pyconfigfile
+    m7b.returnvalue
+    )
+
+  add_executable(${prog} ${prog}.cpp
+    handle_pyerror.cpp)
+  target_link_libraries(${prog}
+    ${Boost_LIBRARIES}
+    ${PYTHON_LIBRARIES}
+    )
+
+endforeach()
