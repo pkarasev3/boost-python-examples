@@ -25,3 +25,4 @@ BOOST_PYTHON_MODULE(m2hb)
     .def("twice", (int (MyClass::*)(int))  &MyClass::twice)
     ;
 }
+

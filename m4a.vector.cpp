@@ -1,5 +1,5 @@
 #include <boost/python.hpp>
-#include <boost/python/suite/indexing/vector_indexing_suite.hpp>
+#include "std_vector_indexing_suite.hpp"
 #include <vector>
 #include <stdlib.h>
 
@@ -16,7 +16,7 @@ std::vector<int> makevector(unsigned len)
 BOOST_PYTHON_MODULE(m4a)
 {
   class_<std::vector<int> >("vector_int")
-    .def(vector_indexing_suite<std::vector<int> >())
+    .def(std_vector_indexing_suite<std::vector<int> >())
     ;
   
   def("makevector", &makevector);

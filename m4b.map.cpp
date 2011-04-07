@@ -1,5 +1,5 @@
 #include <boost/python.hpp>
-#include <boost/python/suite/indexing/map_indexing_suite.hpp>
+#include "std_map_indexing_suite.hpp"
 #include <map>
 #include <stdlib.h>
 
@@ -18,7 +18,7 @@ void dumpmap(const std::map<std::string, double>& m)
 BOOST_PYTHON_MODULE(m4b)
 {
   class_<std::map<std::string, double> >("map_string_double")
-    .def(map_indexing_suite<std::map<std::string, double> >())
+    .def(std_map_indexing_suite<std::map<std::string, double> >())
     ;
 
   def("dumpmap", &dumpmap);
