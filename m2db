@@ -1,0 +1,11 @@
+from m2db import *
+
+s = MyClass()
+s
+t = MyClass()
+t
+s.static_value
+t.static_value
+s.static_value = 2.222
+s.static_value
+t.static_value

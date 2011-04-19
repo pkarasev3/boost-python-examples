@@ -1,4 +1,4 @@
-from m2d import *
+from m2da import *
 
 s = MyClass()
 s.value

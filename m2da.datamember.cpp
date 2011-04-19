@@ -21,7 +21,7 @@ void use_myclass(MyClass m)
 }
 
 
-BOOST_PYTHON_MODULE(m2d)
+BOOST_PYTHON_MODULE(m2da)
 {
   class_<MyClass>("MyClass")
     .def("hello_world", &MyClass::hello_world)

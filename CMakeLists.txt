@@ -37,7 +37,8 @@ foreach(lib
     m2bc.enums
     m2c.udtpass
     m2cb.udt
-    m2d.datamember
+    m2da.datamember
+    m2db.static_datamember
     m2e.readonly
     m2f.constructor
     m2g.constructors
